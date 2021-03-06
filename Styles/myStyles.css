@@ -46,10 +46,13 @@
   color: #fff;
 }
 
+.turnColor {
+  text-shadow: 1px 1px 10px #1ae21a;
+}
+
 .x-turn,
 .o-turn {
   position: relative;
-  /* color: #000; */
   text-decoration: none;
   font-weight: 700;
 }
@@ -57,7 +60,6 @@
 .x-turn-dm,
 .o-turn-dm {
   position: relative;
-  /* color: #fff; */
   text-decoration: none;
   font-weight: 700;
 }
@@ -290,14 +292,12 @@
   .x-turn,
   .o-turn {
     position: relative;
-    /* color: #000; */
     text-decoration: none;
     font-weight: 700;
   }
   .x-turn-dm,
   .o-turn-dm {
     position: relative;
-    /* color: #fff; */
     text-decoration: none;
     font-weight: 700;
   }
@@ -343,14 +343,12 @@
   .x-turn,
   .o-turn {
     position: relative;
-    /* color: #000; */
     text-decoration: none;
     font-weight: 700;
   }
   .x-turn-dm,
   .o-turn-dm {
     position: relative;
-    /* color: #fff; */
     text-decoration: none;
     font-weight: 700;
   }
