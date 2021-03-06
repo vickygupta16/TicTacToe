@@ -144,11 +144,6 @@
   border-color: #d34141;
 }
 
-.no-cursor {
-  cursor: not-allowed;
-  pointer-events: all !important;
-}
-
 #winner {
   font-weight: bold;
   font-size: 25px;
@@ -292,6 +287,27 @@
   .tttDiv {
     padding: 15px;
   }
+  .x-turn,
+  .o-turn {
+    position: relative;
+    /* color: #000; */
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .x-turn-dm,
+  .o-turn-dm {
+    position: relative;
+    /* color: #fff; */
+    text-decoration: none;
+    font-weight: 700;
+  }
+  #winner {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .winner-dm {
+    color: #fff;
+  }
 }
 
 @media (max-width: 540px) {
@@ -323,5 +339,26 @@
   }
   .tttDiv {
     padding: 10px;
+  }
+  .x-turn,
+  .o-turn {
+    position: relative;
+    /* color: #000; */
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .x-turn-dm,
+  .o-turn-dm {
+    position: relative;
+    /* color: #fff; */
+    text-decoration: none;
+    font-weight: 700;
+  }
+  #winner {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .winner-dm {
+    color: #fff;
   }
 }
