@@ -8,7 +8,9 @@ var setValuesToEmpty = () => {
     }
   }
   document.getElementById("xTurn").classList.add("x-turn");
+  document.getElementById("xTurn").classList.add("turnColor");
   document.getElementById("oTurn").classList.remove("o-turn");
+  document.getElementById("oTurn").classList.remove("turnColor");
   document.getElementById("winner").innerText = "";
   document.body.classList.add("bodyBG");
   setGameOn();
@@ -121,14 +123,18 @@ function setChecked() {
     ) {
       document.getElementById(this.id).innerText = "X";
       document.getElementById("xTurn").classList.remove("x-turn");
+      document.getElementById("xTurn").classList.remove("turnColor");
       document.getElementById("oTurn").classList.add("o-turn");
+      document.getElementById("oTurn").classList.add("turnColor");
     } else if (
       !document.getElementById("xTurn").classList.contains("x-turn") &&
       document.getElementById("oTurn").classList.contains("o-turn")
     ) {
       document.getElementById(this.id).innerText = "0";
-      document.getElementById("xTurn").classList.add("x-turn");
       document.getElementById("oTurn").classList.remove("o-turn");
+      document.getElementById("oTurn").classList.remove("turnColor");
+      document.getElementById("xTurn").classList.add("x-turn");
+      document.getElementById("xTurn").classList.add("turnColor");
     }
     document.getElementById(this.id).classList.add("animate-td");
     checkWin(document.getElementById(this.id).innerText);
