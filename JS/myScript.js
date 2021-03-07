@@ -91,6 +91,20 @@ var checkWin = (str) => {
       document.getElementById("box4").classList.add("winnerCell");
       document.getElementById("box6").classList.add("winnerCell");
       winnerFound = true;
+    } else if (
+      document.getElementById("box0").innerText !== "" &&
+      document.getElementById("box1").innerText !== "" &&
+      document.getElementById("box2").innerText !== "" &&
+      document.getElementById("box3").innerText !== "" &&
+      document.getElementById("box4").innerText !== "" &&
+      document.getElementById("box5").innerText !== "" &&
+      document.getElementById("box6").innerText !== "" &&
+      document.getElementById("box7").innerText !== "" &&
+      document.getElementById("box8").innerText !== ""
+    ) {
+      document.getElementById("winner").innerHTML = "";
+      document.getElementById("winner").innerHTML =
+        "Draw Match <i class='fab fa-font-awesome-flag'></i>";
     }
     if (winnerFound) {
       finishGame(str);
@@ -106,9 +120,11 @@ var finishGame = (str) => {
     }
   }
   if (str === "X") {
+    document.getElementById("winner").innerHTML = "";
     document.getElementById("winner").innerHTML =
       "Player 1 <i class='fas fa-trophy'></i>";
   } else if (str === "0") {
+    document.getElementById("winner").innerHTML = "";
     document.getElementById("winner").innerHTML =
       "Player 2 <i class='fas fa-trophy'></i>";
   }
